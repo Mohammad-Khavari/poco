@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Profil</h1>
+        <p>Hier können Sie Ihre Adresse-Angeben einsehen und anpassen.</p>
+        <br>
+        <p id="border-1"></p>
+        <main>
+            <form action="submit" method="POST" >
+            <section>
+                <h4>Persönliche Daten</h4>
+
+                <Label for="titel">Titel</Label>
+                <input type="text" id="titel" name="titel" placeholder="Dr.hc"><br><br>
+                
+                <Label for="vorname">Vorname</Label>
+                <input type="text" id="vorname" name="vorname" placeholder="Peter"><br><br>
+                
+                <Label for="nachname">Nachname</Label>
+                <input type="text" id="nachname" name="nachname" placeholder="Muster"><br><br>
+
+                <p id="gender0">Geschlecht</p>
+                <div id="gender">
+                    <Label for="male">M</Label>
+                    <input type="radio" id="male" name="geschlecht" value="male">
+                    <Label for="female">W</Label>
+                    <input type="radio" id="female" name="geschlecht" value="female">
+                    <br><br>
+                    
+
+                </div>
+               
+                
+                 <p id="lang">Sprache</p>
+                 <div id="lang0">
+                    <Label for="lang1">DE</Label>
+                    <input type="radio" id="lang1" name="Sprache" value="lang1">
+
+                    <Label for="lang2">FR</Label>
+                    <input type="radio" id="lang2" name="Sprache" value="lang2">
+
+                    <Label for="lang3">IT</Label>
+                    <input type="radio" id="lang3" name="Sprache" value="lang3">
+
+                 </div>
+               
+            </section>
+            <p id="border-2"></p>
+            <section>
+                <h4>Kontaktdaten</h4>
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="kontakt" required><br><br>
+                <label for="mobile">Mobile</label>
+                <input type="tel" id="mobile" name="kontakt" placeholder="Optional"><br><br>
+                <label for="Hnummer">Hauptnummer</label>
+                <input type="tel" id="Hnummer" name="kontakt" placeholder="Optional"><br><br>
+                <label for="fax">Fax</label>
+                <input type="tel" id="fax" name="kontakt" placeholder="Optional"><br><br>
+                <label for="mail">Mail 1</label>
+                <input type="email" id="mail" name="kontakt" required>
+                <label for="mail2">Mail 2</label>
+                <input type="email" id="mail2" name="kontakt" placeholder="Optional">
+            </section>
+            <p id="border-3"></p>
+            <section>
+                <h4>Adressdaten</h4><br><br>
+                <label for="firma">Firma</label>
+                <input type="text" id="firma" name="adress" required><br><br>
+                <label for="firma2">Zusats Firma</label>
+                <input type="text" id="firma2" name="adress" placeholder="Optional"><br><br>
+                <label for="web">Homepage</label>
+                <input type="url" id="web" name="adress" placeholder="Optional"><br><br>
+                <label for="adresse-hausnum">Adresse / Haus Nr</label>
+                <input type="text" id="adresse-hausnum" name="adress" placeholder="Bernstrasse" required><input type="number" name="adress" placeholder="3050" required><br><br>
+                <label for="adresse2">Zusats Adresse</label>
+                <input type="text" id="adresse2" name="adress" placeholder="Optional"><br><br>
+                <label for="postfach">Postfach</label>
+                <input type="text" id="postfach" name="adress" placeholder="Optional"><br><br>
+                <label for="plz">PLZ / Ort</label>
+                <input type="number" id="plz" name="adress" placeholder="8800" required><input type="text" id="plz" placeholder="Muri" required><br><br>
+                <label for="land">Kanton / Land</label>
+                <!--Here is a dropdown menu-->
+                <!--<select id="land">
+                    <option value="1" >Schweiz</option>
+                    <option value="4">Deutschland</option>
+                    <option value="2">Österreich</option>
+                    <option value="3">Liechtenstein</option>
+                    <option value="5">Luxemburg</option>
+                    <option value="6">Belgien</option>
+                </select>-->
+                <input type="text" id="land" name="adress" placeholder="Br" required><input type="text" name="adress" placeholder="Schweiz" required>
+
+            </section>
+        </form>
+        
+        <input type="button" id="btn" value="Submit" onclick="submit">
+        </main>
+    </header>
+    
+</body>
+</html>
