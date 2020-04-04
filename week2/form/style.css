@@ -1,0 +1,171 @@
+html{
+    box-sizing: border-box;
+} 
+
+body{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: gray;
+    background-color: rgba(235, 225, 225, 0.295);
+    
+}
+
+
+
+h1{
+    border-top: black solid 10px;
+    max-width: 150px;
+    margin-left: 2px;
+    border-radius: 5%;
+    padding-top: 12px;
+}
+
+header{
+    
+    position: absolute;
+    left: 23.5%;
+    margin-bottom: 80px;
+
+}
+
+.sec{
+    border-top: 3px solid black;
+    margin-top: 12%;
+}
+
+input:not([type="radio"]) {
+    position:relative;
+    float: right;;
+    border: none;
+    border-bottom: solid gray 1px;
+    padding: 6px;
+    margin-right: auto;
+    width: 300px;
+    margin-left: 4px;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    padding: 50px;
+}
+
+fieldset.sec{
+    border-bottom: none;
+}
+
+#h-num, #plz, #std{
+    width: 50px;
+}
+#plz1, #adresse-hausnum, #ld{
+    width: 236px;
+}
+
+input[type="button"]{
+    
+    
+    color: white;
+    background-color: rgb(206, 34, 4);
+    text-align: center;
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    margin-right: auto;
+}
+#btn{
+    position: relative;
+    bottom: 10%;
+    float: right;
+}
+/* this line hide radio button*/
+input[type="radio"]{
+    visibility: hidden;
+}
+
+label[for="male"], label[for="female"] {
+    display: inline-flex;
+    position: relative;
+    float: right;
+    padding: 10px;
+    border: solid gray 1px;
+    width: 135px;
+    text-align: center;
+    
+}
+
+label[for="male"]:hover, label[for="female"]:hover{
+    color: orangered;
+    border-bottom: solid orangered 3px;
+    cursor: pointer;
+   }
+   #gender0{
+       position: relative;
+       top: 40px;
+   }
+
+   input:checked + label[for="female"],
+input:checked + label[for="male"]{
+color: orangered;
+ border-bottom: solid orangered 3px;
+ }
+
+/*These lines of codes position all radio buttons to the right*/
+ label[for="lang1"], label[for="lang2"], label[for="lang3"] {
+    display: inline-flex;
+    position: relative;
+    float: right;
+    padding: 10px;
+    border: solid gray 1px;
+    width: 83.5px;
+    text-align: center;
+    margin-right: auto;
+}
+
+
+label[for="lang1"]:hover, label[for="lang2"]:hover, label[for="lang3"]:hover {
+    color: orangered;
+    border-bottom: solid orangered 3px;
+    cursor: pointer;
+   }
+/*these lines of codes keep the effect after clicking*/
+   input:checked + label[for="lang1"],
+input:checked + label[for="lang2"],
+input:checked + label[for="lang3"]{
+ color: orangered;
+ border-bottom: solid orangered 3px;
+}
+
+#lang{
+    position: relative;
+    top: 40px;
+}
+
+#gender{
+    margin-top: 30px;
+}
+footer{
+    border-top: 1px solid black ;
+    margin: 15px 20%;
+    background-color: rgb(182, 175, 167);
+    height: 70px;
+}
+ul{
+    text-align: center;
+    list-style-type: none;
+}
+li{
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+   
+  
